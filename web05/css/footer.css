@@ -1,0 +1,339 @@
+@charset "UTF-8";
+
+/*account_btn-按鈕*/
+.account_btn {
+  position: fixed;
+  right: 30px;
+  bottom: 10%;
+  z-index: 20;
+}
+.account_btn a {
+  width: 100px;
+  height: 100px;
+  margin: 0 0 20px 0;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 100px;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 12px -2px rgba(0, 0, 0, 0.2);
+  line-height: 1.3;
+}
+.account_btn a span {
+  display: block;
+}
+.account_btn a::before {
+  display: block;
+  content: '';
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 5px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+}
+.account_btn a:last-child {
+  margin: 0;
+}
+.account_btn a.ab_01 {
+  background-color: #0bc5c4;
+}
+.account_btn a.ab_01::before {
+  background-image: url(../images/icon_user_01.png);
+}
+.account_btn a.ab_02 {
+  background-color: #4f4f5b;
+}
+.account_btn a.ab_02::before {
+  background-image: url(../images/icon_user_02.png);
+}
+.set_account .account_btn {
+  display: none;
+}
+
+/*-----footer-----*/
+footer {
+  flex: 0 0 auto;
+  padding: 5px 0 0 0;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: Microsoft JhengHei, Calibri, serif;
+  background: linear-gradient(135deg, #900000 0, #953735 100%);
+}
+footer ul li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  margin: 0 6px 7px 0;
+  line-height: 15px;
+  border-right: 1px solid #fff;
+}
+footer ul li:last-child {
+  border: none;
+}
+footer .fp_address::before,
+footer .fp_phone::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 4px;
+  vertical-align: middle;
+  content: '';
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer .fp_address::before {
+  background-image: url(../images/icon_address.png);
+}
+footer .fp_phone::before {
+  background-image: url(../images/icon_phone.png);
+}
+footer {
+  padding: 0;
+  background: none;
+}
+.sus_f_server {
+  position: relative;
+  background: #172439;
+}
+.sus_f_server .pagesize {
+  height: 90px;
+}
+.sus_f_server ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 5px 0 0 0;
+  text-align: left;
+}
+.sus_f_server li {
+  display: inline-block;
+  margin: 0 6px 0 0;
+  color: #e6ebf5;
+  font-size: 22px;
+  border-right: 1px solid #f7f7f7;
+  line-height: 1.1;
+}
+.sus_f_server li span {
+  margin: 0 10px 0 0;
+  line-height: 1;
+}
+.sus_f_server .btn_signup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 190px;
+  height: 90px;
+  color: #f7f7f7;
+  font-size: 22px;
+  text-align: center;
+  line-height: 90px;
+  background: #c43826;
+}
+.sus_f_server .btn_signup:hover {
+  background: #9d1200;
+}
+.sus_f_main {
+  background: #0d1623;
+}
+.sus_f_main .pagesize {
+  padding: 45px 15px 0 15px;
+}
+.sus_f_link {
+  padding: 0 0 30px 0;
+  text-align: left;
+}
+.sus_f_link .sus_f_cell {
+  display: inline-block;
+  margin: 0 150px 0 0;
+  vertical-align: top;
+}
+.sus_f_link .sus_f_cell h4,
+.sus_f_app h4 {
+  margin: 0 0 20px 0;
+  text-align: left;
+  color: #e6ebf5;
+  font-size: 18px;
+}
+.sus_f_link .sus_f_cell li {
+  display: block;
+  text-align: left;
+  line-height: 24px;
+  font-size: 14px;
+  border: none;
+}
+.sus_f_link .sus_f_cell li a {
+  display: inline-block;
+  padding: 0 0 1px 0;
+  color: #a9b6cb;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.sus_f_link .sus_f_cell li a:hover {
+  border-bottom: 1px solid #c7c7c7;
+}
+.sus_f_app {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+}
+.sus_f_app .qrcode {
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 14px;
+}
+.sus_f_app .qrcode::before {
+  display: block;
+  width: 145px;
+  height: 145px;
+  margin: 0 0 20px 0;
+  content: '';
+  background: url(../images/img_ileaderapp.png) no-repeat center center;
+  background-size: 100% auto;
+}
+.sus_f_copyright {
+  position: relative;
+  padding: 25px 0;
+  border-top: 1px solid #172439;
+}
+/*.sus_f_copyright::before{ position:absolute; left:15px; top:50%; transform:translateY(-50%); display:block; content:""; width:156px; height:36px; vertical-align:middle; background:url(../images/logo_footer.png) no-repeat center center; background-size:100% auto;}*/
+.sus_f_copyright ul {
+  text-align: left;
+}
+.sus_f_copyright li,
+.sus_f_copyright li a {
+  color: #c0c0c0;
+  font-size: 14px;
+}
+.sus_f_copyright li {
+  border-right: 1px solid #c0c0c0;
+}
+.sus_f_social {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sus_f_social a,
+.share_con a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 6px 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sus_f_social .btn_youtube {
+  background-image: url(../images/btn_youtube.png);
+}
+.sus_f_social .btn_fb {
+  background-image: url(../images/btn_fb.png);
+}
+.sus_f_social .btn_line {
+  background-image: url(../images/btn_line.png);
+}
+
+/*小網樣式*/
+@media screen and (max-width: 767px) {
+  /*選單*/
+  header .nav_web,
+  footer ul,
+  .user_con {
+    display: none;
+  }
+  /*-----footer-----*/
+
+  footer span,
+  footer ul li,
+  footer ul:last-child {
+    display: block;
+  }
+  footer ul li {
+    padding: 0;
+    margin: 0 0 7px 0;
+    line-height: 14px;
+    font-size: 14px;
+    border: none;
+  }
+  .sus_f_server .pagesize {
+    height: auto;
+    padding: 0;
+  }
+  .sus_f_server ul {
+    position: static;
+    transform: translateY(0);
+    padding: 20px 0;
+  }
+  .sus_f_server li {
+    display: block;
+    margin: 0 0 15px 0;
+    text-align: center;
+    border: none;
+  }
+  .sus_f_server ul li:first-child span,
+  .sus_f_link,
+  .sus_f_app,
+  .sus_f_copyright::before {
+    display: none;
+  }
+  .sus_f_server ul li span {
+    display: inline-block;
+  }
+  .sus_f_server ul li:last-child {
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #dedede;
+    font-size: 14px;
+  }
+  .sus_f_server ul li:first-child::before {
+    display: block;
+    margin: 0 0 15px 0;
+    content: '撥打客服專線';
+    color: #dedede;
+    font-size: 18px;
+  }
+  .sus_f_server .btn_signup {
+    position: static;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    font-size: 20px;
+  }
+  .sus_f_main .pagesize {
+    padding: 0;
+  }
+  .sus_f_copyright,
+  .sus_f_copyright ul li {
+    border: none;
+  }
+  .sus_f_copyright ul {
+    text-align: center;
+  }
+  .sus_f_copyright ul:first-child {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+  .sus_f_social {
+    position: static;
+    transform: translateY(0);
+    padding: 20px 0 0 0;
+    border-top: 1px solid #172439;
+  }
+  .account_btn {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+/*最小尺寸手機樣式*/
+@media screen and (max-width: 360px) {
+}
+/*---forie 微調樣式--*/
+@media screen and (min-width: 0\0) {
+}

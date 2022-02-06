@@ -1,0 +1,94 @@
+/////////變數設定/////////
+$mainTit-color: #2f4775;
+$subTit-color: #e82f7d;
+$warnText-color: #b4b47c;
+$btnMain-color: #ffc82d;
+$btnSub-color: #c3c3c3;
+$font-color: #313131;
+$font-size: 1.125rem;
+$mgbottom: 10px;
+
+/////////%設定/////////
+%center-ab {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); //絕對定位置中//
+}
+%mgauto {
+  margin: 0 auto; //置中//
+}
+%font-nowrap {
+  white-space: nowrap; //文字不換行//
+}
+%font-Enwrap {
+  word-break: break-all; //英文字強迫換行//
+}
+
+/*定義rwd尺寸設定*/
+@mixin pad {
+  @media all and(max-width: 1100px) {
+    @content;
+  }
+}
+@mixin minPad {
+  @media all and(max-width: 900px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media all and(max-width: 768px) {
+    @content;
+  }
+}
+@mixin minMobile {
+  @media all and(max-width: 360px) {
+    @content;
+  }
+}
+
+/*最大行數設定*/
+@mixin maxline($maxline) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $maxline;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+/*背景圖片設定*/
+@mixin bg-images($positon, $size, $image) {
+  background-repeat: no-repeat;
+  background-position: $positon;
+  background-size: $size;
+  background-image: url($image);
+}
+
+/*底圖區塊設定*/
+@mixin area($area-bg: #f8f8f8) {
+  background-color: $area-bg;
+  padding: 15px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.01);
+}
+
+/*區塊大小設定*/
+@mixin box($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+/*rwd圖片設定*/
+@mixin rwd-img($rwd-size: 56%) {
+  position: relative;
+  padding-bottom: $rwd-size;
+}
+
+/*箭頭設定*/
+@mixin arrow($angle: 45deg, $size: 10px, $color: #fff) {
+  width: $size;
+  height: $size;
+  border-top: 2px solid$color;
+  border-right: 2px solid$color;
+  transform: rotate($angle);
+}

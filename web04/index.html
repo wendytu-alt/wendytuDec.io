@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no" />
+	<title>永豐金證券定期定額投資</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<!-- ... jquery css... -->
+	<link rel="stylesheet" href="css/jquery.swiper.css">
+	<link rel="stylesheet" href="css/jquery.swiper.min.css">
+	<!-- ... css... -->
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- 頁面 -->
+		<!-- header -->
+		<div class="header">
+			<div class="pagesize">
+				<div class="logo"><img src="images/header_logo.png" alt="">
+					<nav>
+						<ul>
+							<li>豐存股</li>
+							<li>台股</li>
+							<li>美股</li>
+							<li>常見問題</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="login_btn"><span>登入立即存股</span></div>
+			</div>
+		</div>
+		<!-- banner -->
+		<div class="main-banner">
+			<div class="bannermax-w">
+				<div class="turn_bannerbox">
+					<div class="banner-wordbox">
+						<img class="bannerdeco" src="images/banner-word_deco.png" alt="">
+						<img class="bannerword" src="images/banner-word.png" alt="">
+						<img  class="deco004"src="images/deco004.png" alt="">
+						<img  class="deco001"src="images/deco001.png" alt="">
+						<img  class="deco002"src="images/deco002.png" alt="">
+						<img  class="deco003"src="images/deco003.png" alt="">
+						<img  class="deco005"src="images/deco005.png" alt="">
+						<img  class="deco006"src="images/deco006.png" alt="">
+					</div>
+					<div class="banner_block">
+						<img class="bannerpic" src="images/banner-1.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contain">
+			<!-- 台股+美股part01-->
+			<div class="part01" style="background-image: url(images/part01-bg.png);">
+				<div class="part01_wordbox">
+					<div class="title01">
+						<h3><span>台股</span>+<span class="red_circle">美股</span>二維投資法</h3>
+					</div>
+					<hr style="border:0;background-color:#37363c;height:2px;">
+					<h6 class="anmi1-1">[ 懶人+小資 ]x定期定額 </h6>
+					<hr style="border:0;background-color:#37363c;height:2px;">
+					<p class="anmi1-2">用時間累積未來財富!</p>
+				</div>
+			</div>
+			<!-- part02-->
+			<div class="part02">
+				<div class="taiwan" style="background-image: url(images/par02-1.png);">
+					<img class="taiwant" src="images/part02-taiwanT.png" alt="">
+					<div class="taiwaninfo">
+						<img src="images/part02-taiwanC.png" alt="">
+						<div class="num num6">6</div>
+						<div class="num num9">9</div>
+						<div class="num num122">122</div>
+					</div>
+				</div>
+				<div class="btn01"><span>立即存台股</span></div>
+				<div class="usa" style="background-image: url(images/par02-2.png);">
+					<img class="usat" src="images/part02-usaT.png" alt="">
+
+					<div class="usainfo">
+						<img class="usainfo" src="images/part02-usaC.png" alt="">
+						<div class="num num20">20</div>
+						<div class="num num33">33</div>
+						<div class="num num24">24</div>
+					</div>
+				</div>
+				<div class="btn02">立即存美股</div>
+			</div>
+			<!-- part03-->
+			<div class="part03">
+				<div class="title_03">多元策略投資就選豐存股
+					<img class="deco01" src="images/part03-deco1.png" alt="">
+					<img class="deco02" src="images/part03-deco2.png" alt="">
+				</div>
+				<div class="sub_title">讓我們一起把投資變得更加美好！</div>
+				<div class="phone-box">
+					<div class="pagesize">
+						<img class="phone" src="images/part03-phone.png" alt="">
+						<div class="circle01">
+							<img class="icon01 icon" src="images/part03-icon01.png" alt="">
+							<img class="icontext01" src="images/part03-icon01-text.png" alt="">
+						</div>
+						<div class="circle02">
+							<img class="icon02 icon" src="images/part03-icon02.png" alt="">
+							<img class="icontext02" src="images/part03-icon02-text.png" alt="">
+							<img class="icon03 icon" src="images/part03-icon03.png" alt="">
+							<img class="icontext03" src="images/part03-icon03-text.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<footer>
+		<div class="pagesize">
+			<p>永豐金證券股份有限公司 台北市重慶南路一段二號7、18、20樓<br>
+				TEL：0800-038-123 02-6630-8899 (台股營業日：AM 7：30至PM 10：00)<br>
+				107年金管證總字第0006號（永豐金證券） 105年金管期總字第010號（委任期貨商永豐期貨）</p>
+		</div>
+	</footer>
+	</div>
+	<!-- ... jquery.. -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.swiper.js"></script>
+	<script type="text/javascript">
+		var num = 1;
+		$(document).ready(function () {
+			$(function () {
+				$(".bannerdeco").animate({
+
+					right: '20',
+					opacity: '1',
+				}, 1000);
+				$(".bannerpic").animate({
+					left: '-40',
+					opacity: '1',
+
+				}, 1000);
+			});
+			$(window).scroll(function () {
+				var top = $(document).scrollTop();
+				/*part01*/
+				if (top > 0) {
+					$(".anmi1-1").animate({
+						bottom: '0',
+						opacity: '1',
+					}, 1000);
+					$(".anmi1-2").animate({
+						bottom: '0',
+						opacity: '1',
+					}, 1000);
+				}
+				if (top > 500) {
+					$(".taiwan").animate({
+						left: '0',
+						opacity: '1',
+					}, 1000);
+					$(".usa").animate({
+						right: '0',
+						opacity: '1',
+					}, 1000);
+				}
+				if (top > 550) {
+					$(".taiwant").animate({
+						top: '40',
+						opacity: '1',
+					}, 1000);
+					$(".usat").animate({
+						top: '40',
+						opacity: '1',
+					}, 1000);				
+				}
+				if (top > 1200) {
+					$(".title_03").animate({
+						bottom: '0',
+						opacity: '1',
+					}, 1000);
+					$(".sub_title").animate({
+						bottom: '0',
+						opacity: '1',
+					}, 1000);					
+				}
+				if (top > 1400) {
+					$(".phone-box").animate({
+						bottom: '0',
+						opacity: '1',
+					}, 1000);	
+					$(".circle01").animate({
+						left: '140',
+						opacity: '1',
+					}, 1000);	
+					$(".circle02").animate({
+						right: '120',
+						opacity: '1',
+					}, 1000);									
+				}
+			});			
+			/*footer置底*/
+			var $win = $(window);
+			$win.bind('resize', function () {
+				try {
+					$('.contain').css("min-height", $win.height() - $('footer').outerHeight() - $('.contain').offset().top);
+				} catch (err) { }
+			}).resize();
+		})
+
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024" />
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/Android/i)
+			|| navigator.userAgent.match(/webOS/i)
+			|| navigator.userAgent.match(/iPhone/i)
+			|| navigator.userAgent.match(/iPod/i)
+			|| navigator.userAgent.match(/BlackBerry/i)
+			|| navigator.userAgent.match(/Windows Phone/i)) {
+			document.write('<meta name="viewport" content="width=device-width, user-scalable=no"/>');
+		}
+	</script>
+	<meta name="format-detection" content="telephone=no" />
+	<title>作品集網站</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<!--css-->
+	<link rel="stylesheet" href="css/gobal.css">
+	<link rel="stylesheet" href="css/in.css">
+	<!--js-->
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="page">
+		<div class="page_cover"></div>
+		<div id="pageSize" class="wrapper ">
+			<!--header-->
+			<header>
+				<div class="in">
+					<!--logo-->
+					<h1><a href="index.html">Portfolio</a></h1>
+					<!--nav-->
+					<div class="rBox">
+						<ul class="navBox">
+							<li><a href="innerpage01.html">設計作品</a></li>
+							<li><a href="index_ex.html">工作經歷</a></li>
+							<li><a href="#">個人介紹</a></li>
+						</ul>
+					</div>
+					<!--小網icon-->
+					<div class="menu pageMenu-btn"></div>
+				</div>
+			</header>
+			<!--主要內容-->
+			<div class="main inner">
+				<!--top介紹-->
+				<div class="block top b0">
+					<div class="bgImg">
+						<img src="img/innerTopbg07.jpg" alt="">
+					</div>
+					<div class="in">
+						<div class="head"></div>
+						<div class="tC">
+							<h2 class="mb-m">涂雯婷</h2>
+							<p class="mb-lg">1994年03月5日，桃園人</p>
+						</div>
+					</div>
+				</div>
+				<div class="block gray">
+					<div class="in person">
+						<h4>學歷</h4>
+						<p>高中_中壢高商商經科</p>
+						<p>大學_亞東科技大學工商業設計系</p>
+						<h4>年資</h4>
+						<p>約5年(電商美編2年、畢冊美編1年，網站設計部2年)</p>
+						<h4>技能</h4>
+						<p>設計能力(運用AI、PS)</p>
+						<P>切版(CSS、HTML、JQUERY、JAVASCRIPT、SCSS)</P>
+						<P>基本動畫剪輯處理(AE、PR)</P>
+						<h4>家庭</h4>
+						<p>有個姊姊與弟弟，姊姊已結婚，目前與弟弟在台北租屋工作、父母皆住在老家桃園。</p>
+						<h4>簡介</h4>
+						<p>畢業後，多從事平面等電商美編工作，但經過了多年，覺得平面產業競爭激烈，希望增加自己技能，於是自學切版課程，但由於實作與線上課程學習尚有差別，自覺速度緩慢，加上對網頁產業了解過少，於是希望透過實作來增進實力，剛好碰到現在任職的公司_百商數位。<br>
+						當時公司剛好缺一個需要會簡單後製能力、並能在閒暇時協助網頁切版與提版，與主管面試後，覺得這份工作非常適合我，於是馬上談好入職。</p>
+						<p>入職後，一開始先做一頁式活動練習切版，慢慢地開始接手一些專案，迅速的從實作中學習，非常感謝現在的公司當初願意給我機會！</p>
+						<h4>未來規劃</h4>
+						<p>目前公司已任職2年半，與同事間相處也非常融洽，但由於個人規劃希望之後能搬回桃園住，因此未來希望能回桃園工作</p>
+						<p>程式方面，功能與動畫目前多以套件與jquery為主，未來希望能增進自己的Javascript能力，在動態效果與功能運用上面能夠更加靈活。</p>
+						<p>設計方面，目前都以ps設計為主，未來希望能慢慢轉移習慣至figma作業，可協同作業。</p>
+						<p>動畫方面，希望更加增進ae動畫能力，未來網頁上的動畫也可借助完成更為方便。</p>
+					</div>
+				</div>
+			</div>
+			<!--footer內容-->
+			<footer>
+				<div class="in">
+					<p>©2022 涂雯婷</p>
+				</div>
+			</footer>
+			<!--裝飾線-->
+			<div class="cenLine"></div>
+			<!--fixed 聯絡我-->
+			<div class="fixed">
+				<a href="mailto:cat19940305@gmail.com"><span class="icon"><img src="images/mail.png" alt=""></span>聯<br>絡<br>我</a>
+			</div>
+		</div>
+	</div>
+	<!-- pageMenu -->
+	<nav id="pageMenu" data-from="right">
+		<ul>
+			<li><a href="innerpage01.html">設計作品</a></li>
+			<li><a href="index_ex.html">工作經歷</a></li>
+			<li class="login"><a href="mailto:cat19940305@gmail.com">聯絡我</a>
+			</li>
+		</ul>
+	</nav>
+	<script>
+		/*header 滾軸超過40 改變樣式*/
+			$(window).scroll(function () {
+				if ($(window).scrollTop() >= 40) {
+					$("header").addClass("sticky")
+				}
+				else {
+					$("header").removeClass("sticky")
+				}
+			});
+	</script>
+</body>
+
+</html>
