@@ -1,0 +1,135 @@
+@charset "utf-8";
+/*-----nav-----*/
+/*index*/
+.nav_list{ min-width:200px;}
+.nav_list ol li{ position:relative; border:none;}
+.nav_list ol a{ padding: 6px 15px;}
+.nav_list ol a:hover{ color:#fff; background:#b19545;}
+.nav_list ol .nav_list_sec a{ background:url(../images/icon_arrow.png) no-repeat 95% 50%; padding-right: 30px;}
+.nav_list ol .nav_list_sec a:hover{ color:#fff; background:#b19545 url(../images/icon_arrow_on.png) no-repeat 95% 50%;}
+.nav_list .nav_list_third{ position:absolute; display:none; top:0; left:199px; width:230px; background-color:#f2f2f2; box-shadow: 2px 2px 3px rgba(0%,0%,0%,0.2);}
+.nav_list ol .nav_list_sec:hover > .nav_list_third{ display:block;}
+.nav_list ol li .nav_list_third h4{ padding: 6px 15px; color:#1b4ca7; font-size:16px;}
+.nav_list ol li .nav_list_third h4 a { margin: -6px -15px; background-image: none; }
+.nav_list ol li .nav_list_third h4 a:hover { background-image: none; }
+.nav_list ol li .nav_list_third ol li{ margin:5px 0; padding:0 0 0 15px; border:none; background:none;}
+.nav_list ol .nav_list_sec ol li a{ padding: 0px 15px 5px 15px; line-height:20px; color:#000; margin-left:0; background:none;}
+.nav_list ol .nav_list_sec ol li a:hover{ color:#e71a0f; margin-left:0; background:none;}
+
+
+/*-----for金控金色標題-----*/
+.nl_cell .nl_tit, .slist_typ h4{ color:#b19545;}
+
+
+/*-----企業-報告書下載-----*/
+.csr_re_box{ overflow:hidden; display: flex; flex-wrap: wrap;}
+.cr_cell{ width:25%; /*float:left;*/ box-sizing:border-box; margin-bottom:20px;}
+.cr_cell::after{ clear:both;}
+.cr_cell img{ width:150px; height:auto; display:block; vertical-align:middle; border:1px solid #ababab; box-sizing:border-box; margin:0 auto;}
+.cr_cell .cr_txt{ font-size:18px; font-weight:bold; vertical-align:middle; color:#898989; text-align:center; padding-top:15px;}
+.cr_cell .cr_txt h4{ margin-bottom:10px;}
+
+
+/*-----企業-企業公民-----*/
+.btn_citizen{ overflow:hidden;}
+.btn_citizen .bc_cell{ width:32%; position:relative; margin-right:2%; float:left; cursor:pointer;}
+.btn_citizen .bc_cell:last-child{ margin-right:0;}
+.btn_citizen .bc_cell img{ width:100%; height:auto; display:block;}
+.btn_citizen .bc_cell span{ width:100%; background:rgba(75, 95, 105, 0.4); display:block; line-height:50px; padding-left:15px; color:#fff; font-weight:bold; border-top:1px solid #fff; position:absolute; bottom:0; box-sizing:border-box;}
+
+
+/*-----投資-IR行事曆-----*/
+.table_ir li{ width:18%;}
+.table_ir li:nth-child(3){ width:auto;}
+.table_ir li:nth-child(4), .table_ir li:last-child{ width:12%;}
+.table_ir li:nth-child(5){ width:22%;}
+.table_ir ul li:nth-child(3){ text-align:justify;}
+.table_os ol li{ width:24%;}
+.table_os ol li:first-child{ width:auto;}
+.table_os ul li:first-child{ text-align:left;}
+.table_pr ol li{ width:24%;}
+.table_pr ol li:last-child{ width:auto;}
+.table_pr ul li:last-child{ text-align:left;}
+
+
+/*-----投資-財務報告-----*/
+.invt_report{ padding-top:30px;}
+.invt_report h5{ font-size:18px; margin-bottom:15px;}
+.table_re li{ width:25%;}
+.invt_report .re_txt{ margin-top:5px;}
+
+
+/*-----菁英招募-----*/
+.elite_con{ margin-bottom:20px; display: flex;}
+.elite_con .ec_cell{ width:30.5%; text-align:center; position:relative; border:1px solid #b19545; margin-right:3.5%; vertical-align:top;}
+.elite_con .ec_cell:last-child{ margin-right:0;}
+.elite_con .ec_cell .ec_btn{ font-size:18px; font-weight:bold; color:#b19545; display:block; padding:30px 0;}
+.elite_con .ec_cell .ec_btn:hover, .elite_con .on .ec_btn{ background:#b19545; color:#fff;}
+.edit_box .ec_cell ul{ margin-left:0; padding-top:15px; border-top:1px solid #b19545;}
+.ec_cell ul li{ list-style:none; text-align:center; margin-bottom:15px;}
+
+
+/*-----股價觀測站-----*/
+.table_sp, .table_sp ul, .table_sp li, .table_sp span{ display:block; background:#fff;}
+.table_sp ul{ margin-bottom:15px;}
+.table_sp ul li{ width:100%; box-sizing:border-box; text-align:left; border-right:1px solid #d2d2d2;}
+.table_sp ul:last-child li{border-bottom:0;}
+.table_sp ul li:first-child{ border-top:1px solid #b19545;}
+.table_sp ul li:last-child{ border-bottom:1px solid #d2d2d2;}
+.table_sp ol{ display:none;}
+.table_sp span{color:#b19545; font-weight:bold; width:50px; display:inline-block; margin-bottom:0;}
+.table_sp .sp_u{color:#e60012;}
+.table_sp .sp_d{color:#009944;}
+
+
+/*-----CSR影音-----*/
+.video_con{ overflow:hidden;}
+.video_con .vc_cell{ width:49%; margin-right:2%; float:left; margin-bottom:30px;}
+.video_con .vc_cell:nth-child(even){ margin-right:0;}
+.video_con .vc_cell iframe{  margin-bottom:15px;}
+.video_con .vc_cell h4{ color:#b19545; font-size:18px;}
+.video-container { position: relative; padding-bottom: 56.25%;padding-top: 30px;height: 0;overflow: hidden; margin-bottom: 10px; }
+.video-container iframe, .video-container object, .video-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+
+@media screen and (max-width:1300px) {
+.nav ul li:last-child .nav_list .nav_list_third{ left:auto; right:199px;}
+}
+
+
+@media screen and (max-width: 767px) {
+/*-----menu-----*/
+/*.mm-menu li{ font-size:16px;}
+.mm-list a.mm-subopen + a, .mm-list a.mm-subopen + span{ padding-right:30px;}*/
+
+/*-----企業-報告書下載-----*/
+.cr_cell:nth-child(2n){ margin-right:0;}
+.cr_cell img{ width:135px;}
+
+/*-----企業-企業公民-----*/
+.btn_citizen .bc_cell{ float:none; margin-right:0; width:100%; margin-bottom:15px;}
+
+/*-----投資-財務報告-----*/
+.invt_report{ padding-top:0px;}
+.invt_report .re_txt{ display:inline-block; vertical-align:middle; margin-left:10px;}
+
+/*-----投資-IR行事曆-----*/
+.table_ir br{ display:none;}
+
+/*-----菁英招募-----*/
+.elite_con{ margin-bottom:0px; display: block;}
+.elite_con .ec_cell{ width: auto; margin-right:0; margin-bottom:15px; display:block;}
+.elite_con .ec_cell .ec_btn{ padding:15px 0;}
+
+/*-----股價觀測站-----*/
+.table_sp span{color:#b19545; font-weight:bold; width:50px; display:inline-block; margin-bottom:0;}
+	
+
+/*-----CSR影音-----*/
+.video_con .vc_cell{ width:100%; margin-right:0%; float:none;}
+.video_con .vc_cell iframe{ /*width:100%; height:auto;*/ }
+
+/*-----投資-IR行事曆-----*/
+.inp_bg .table_ir li{ width:100%;}
+
+}
