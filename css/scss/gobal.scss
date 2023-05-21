@@ -570,7 +570,7 @@ body {
 /*頁面基本設定*/
 
 body {
-  font: 18px/120% 'Noto Sans TC', Helvetica, '微軟正黑體';
+  font: 18px/120% Arial,'Noto Sans TC', Helvetica, '微軟正黑體';
   font-weight: 200;
   letter-spacing: 0.7px;
   color: $font-color;
@@ -589,7 +589,7 @@ body {
     transform: translateX(-50%);
     @include mobile() {
       width: calc(100% - 28px);
-      background-color: #fff;
+      background-color: #f8F8F8;
       position: absolute;
       border: 1px solid #f1f1f1;
       border-top: none;
@@ -650,13 +650,18 @@ body {
     padding: 0 15px;
     min-width: auto;
     width: 100%;
+    // background: #f8f8f8;
   }
 }
 .main{
   background-color: #f8f8f8;
+  
 }
 .main.inner{
   background-color: transparent;
+  @include mobile() {
+    background-color: #f8f8f8;
+  }
 }
 /*header*/
 header {
@@ -664,6 +669,7 @@ header {
   transition: 0.3s all ease-in-out;
   @include mobile() {
     padding: 15px 0;
+    background: #f8f8f8;
   }
   .in {
     display: flex;

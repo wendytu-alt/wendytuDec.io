@@ -166,6 +166,11 @@ $(function(){
         watchSlidesProgress: true,
       });
       var swiper2 = new Swiper(".stepconSwiper", {
+        autoplay: {
+          delay: 4000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+        },
         spaceBetween: 10,
         navigation: {
           nextEl: ".stepconNext",
