@@ -348,7 +348,7 @@ h2.inner{
     overflow: hidden;
   }
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: bold;
     margin-bottom: 10px;
     @include mobile(){
@@ -357,10 +357,14 @@ h2.inner{
     }
     
   }
+  p{
+    font-size: 1rem;
+  }
   ol {
     
     li{
     margin-left: 20px;
+    margin-bottom: 5px;
     }
   }
 }
@@ -591,6 +595,35 @@ ol li {
 }
 
 /*內頁設定*/
+.block.top.spe{
+  .head{
+     display: none;
+  }
+  .in{
+    padding-top: 30px;
+    // @include mobile(){
+    //   padding-top: 30px;
+    // }
+  }
+  .tC {
+    color:#fff;
+    p{
+      margin-bottom: 100px;
+    }
+  }
+  h2{
+    @include mobile(){
+      margin-bottom: 10px;
+    }
+
+  }
+  .bgImg{
+    @include mobile(){
+      height: 130px;
+    }
+  }
+
+}
 .block.top{
   padding-top: 0;
   .in{
@@ -629,6 +662,9 @@ ol li {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    @include mobile(){
+      width: 300%;
+    }
   }
   
 }

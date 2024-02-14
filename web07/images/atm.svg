@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Artboard_30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2D9739;}
+	.st1{fill:#44BC59;}
+	.st2{fill:#8FD79B;}
+	.st3{fill:#0D8410;}
+	.st4{fill:#393A3A;}
+	.st5{fill:#5BC6E5;}
+	.st6{fill:#88898D;}
+	.st7{fill:#616161;}
+	.st8{fill:#98FBFE;}
+	.st9{fill:#212121;}
+</style>
+<g>
+	<path class="st0" d="M96,16h320c0,0,32,240.4,32,241.1V480c0,8.8-7.2,16-16,16H80c-8.8,0-16-7.2-16-16V257.1C64,256.4,96,16,96,16z
+		"/>
+	<g>
+		<path class="st1" d="M64,480c0,8.8,7.2,16,16,16h352c8.8,0,16-7.2,16-16V296H64V480z"/>
+		<path class="st2" d="M400,464H112c-8.8,0-16-6.4-16-14.3V342.3c0-7.9,7.2-14.3,16-14.3h288c8.8,0,16,6.4,16,21.5v107.4
+			C416,457.6,408.8,464,400,464L400,464z"/>
+		<path class="st3" d="M448,272l-48-61.7c-5.2-6.7-8-15-8-23.4V48c0-8.8-7.2-16-16-16H136c-8.8,0-16,7.2-16,16v138.9
+			c0,8.5-2.8,16.7-8,23.5L64,272H448z"/>
+		<path class="st4" d="M136,48h240v144H136V48z"/>
+		<path class="st5" d="M160,72h160v96H160V72z"/>
+		<g>
+			<path class="st6" d="M336,80h24v16h-24V80z"/>
+		</g>
+		<g>
+			<path class="st6" d="M336,104h24v16h-24V104z"/>
+		</g>
+		<g>
+			<path class="st6" d="M336,128h24v16h-24V128z"/>
+		</g>
+		<g>
+			<path class="st6" d="M336,152h24v16h-24V152z"/>
+		</g>
+		<path class="st4" d="M128,216l-40,56h192v-56H128z"/>
+		<path class="st7" d="M105.1,248H280v24H88L105.1,248z"/>
+		<path class="st6" d="M304,272h120l-40-56h-80V272z"/>
+		<path class="st2" d="M64,272h384v24H64V272z"/>
+		<path class="st8" d="M178.8,72c22.3,56.2,77.1,96,141.2,96V72H178.8z"/>
+	</g>
+</g>
+<g>
+	<path class="st9" d="M182.2,420.5h-35.8l-7.5,21.5h-16.7l34.9-92.4h14.4l35,92.4h-16.8L182.2,420.5z M150.9,407.5h26.8l-13.4-38.3
+		L150.9,407.5z"/>
+	<path class="st9" d="M272.2,362.5h-28.8V442h-15.9v-79.5h-28.6v-12.9h73.3V362.5z"/>
+	<path class="st9" d="M301.3,349.6l26.7,70.8l26.6-70.8h20.8V442h-16v-30.5l1.6-40.8L333.6,442h-11.5l-27.2-71.2l1.6,40.7V442h-16
+		v-92.4H301.3z"/>
+</g>
+</svg>

@@ -167,7 +167,7 @@ $(function(){
       });
       var swiper2 = new Swiper(".stepconSwiper", {
         autoplay: {
-          delay: 4000,
+          delay: 6000,
           stopOnLastSlide: false,
           disableOnInteraction: true,
         },
