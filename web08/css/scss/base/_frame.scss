@@ -1,0 +1,304 @@
+// import
+@import "../base/_mixins.scss";
+
+/*----------------------------------------------------*/
+/* 框架及天地 */
+/*----------------------------------------------------*/
+// 天高度
+$header-up: 85px;
+$header-nav: 78px;
+$header-height: $header-up + $header-nav;
+
+/*----------------------------------------------------*/
+body {
+  color: #272727;
+  @include screen-width($size-mobile) {
+    font-size: 16px;
+  }
+}
+
+.wrapper { 
+  padding-top: $header-height;
+  // min-height: 100vh; 
+  position: relative; 
+  background: #fff;
+  @include screen-width($size-mobile) {
+    padding-top: 44px;
+  }
+}
+
+.container {
+}
+
+//內容寬度
+.pagesize {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+  @include screen-width($size-large) {
+    padding: 0 60px;
+  }
+  @include screen-width($size-mid) {
+    padding: 0 40px;
+  }
+  @include screen-width($size-mobile) {
+    padding: 0 12px;
+  }
+}
+/*----------------------------------------------------*/
+/* header */
+.header { 
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background: #fff;
+  @include screen-width($size-mobile) {
+    height: auto;
+  }
+}
+
+.header_logo {
+  height: $header-up;
+  padding-top: 18px;
+  @include screen-width($size-mobile) {
+    height: 44px;
+    padding-top: 6px;
+  }
+  .logo {
+    @extend .imgbox;
+    display: block;
+    width: 120px;
+    height: 42px;
+    @include screen-width($size-mobile) {
+      width: 80px;
+      height: 28px;
+    }
+  }
+}
+
+.header_bg {
+  background: #5d973e;
+}
+.header_nav {
+  display: flex;
+  @include screen-width($size-mobile) {
+    display: none;
+  }
+  a {
+    flex: 1 1 20%;
+    // @extend .font-round;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $header-nav;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    border-right: solid 2px #b8d6a9;
+    &:last-of-type {
+      border: none;
+    }
+    span {
+      display: inline-block;
+    }
+    .icon {
+      flex: 0 1 auto;
+      display: block;
+      padding-left: 36px;
+    }
+    @include screen-width($size-mid) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+@for $i from 1 through 5 {
+  .header_nav span.icon#{$i},
+  #pageMenu .icon#{$i} {
+    background: url(../images/header-nav-#{$i}.png) left center no-repeat;
+    background-size: 30px;
+  }
+}
+
+// pageMenu button
+#pageMenu {
+  @extend .header_bg;
+  ul {
+    padding: 0 12px;
+    a {
+      border: none;
+      height: auto;
+      padding: 15px 0;
+      line-height: 30px;
+    }
+  }
+  li {
+    text-align: center;
+    color: #fff;
+    border-bottom: solid 1px #b8d6a9;
+    &:nth-last-child(1) {
+      border: none;
+    }
+  }
+  span {
+    display: inline-block;
+    padding-left: 36px;
+  }
+}
+.pageMenu-btn {
+  display: none;
+  position: absolute;
+  z-index: 1002;
+  top: 8px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #5d973e;
+  @include screen-width($size-mobile) {
+    display: block;
+  }
+  .line01, .line02, .line03 {
+    position: absolute;
+    top: 13px;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+  }
+  .line01 {
+    left: calc(50% - 11px);
+  }
+  .line02 {
+    left: calc(50% - 2px);
+  }
+  .line03 {
+    left: calc(50% + 7px);
+  }
+
+}
+
+/*----------------------------------------------------*/
+/*footer*/
+.footer {
+  @extend .font-en;
+  padding: 28px 0;
+  color: #fff;
+  background: #76a95b;
+  .pagesize {
+    display: flex;
+    align-items: center;
+  }
+  @include screen-width($size-mobile) {
+    padding: 22px 0 18px;
+    .pagesize {
+      position: relative;
+      display: block;
+    }
+  }
+}
+.footer-logo {
+  flex: 0 0 auto;
+  width: 240px;
+  margin-right: 15px;
+  padding: 15px 35px 10px;
+  img {
+    width: 170px;
+    height: 60px;
+  }
+  @include screen-width($size-mid) {
+    width: auto;
+    padding: 15px 0 10px;
+  }
+  @include screen-width($size-mobile) {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    margin: 0;
+    padding: 0;
+    img {
+      width: auto;
+      height: 32px;
+    }
+  }
+}
+.footer-part1 {
+  flex: 1 1 auto;
+  margin-right: 10px;
+  @include screen-width($size-mobile) {
+    display: none;
+  }
+}
+.footer-info {
+  p {
+    padding-left: 35px;
+    span {
+      display: inline-block;
+    }
+  }
+  .phone {
+    background: url(../images/footer-phone.png) left top 4px no-repeat;
+  }
+  .line {
+    background: url(../images/footer-line.png) left top 4px no-repeat;
+  }
+  .hour {
+    background: url(../images/footer-hour.png) left top 4px no-repeat;
+  }
+}
+.footer-part2 {
+  flex: 0 1 380px;
+  text-align: right;
+  .copyright {
+    span {
+      display: block;
+    }
+    @include screen-width($size-mobile) {
+      font-size: 14px;
+      line-height: 1.5em;
+      text-align: center;
+    }
+  }
+}
+.footer-links {
+  margin-bottom: 10px;
+  a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 40px;
+    border-radius: 50%;
+    @include screen-width($size-mobile) {
+      width: 32px;
+      height: 32px;
+      margin-left: 30px;
+    }
+  }
+  .yt {
+    background: url(../images/footer-link-yt.png) left center no-repeat;
+    background-size: 100%;
+  }
+  .fb {
+    background: url(../images/footer-link-fb.png) left center no-repeat;
+    background-size: 100%;
+  }
+  .ig {
+    background: url(../images/footer-link-ig.png) left center no-repeat;
+    background-size: 100%;
+  }
+}
+
+
+/*popup*/
+.popup { display: none; }
+// .popup.open { display: block; position: fixed; top: 0; bottom: 0; left: 0; right: 0; overflow-y: scroll; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 2000; }
+// .popup_area { position: relative; z-index: 2001; max-width: 900px; margin: 95px auto 40px; padding: 40px; line-height: 150%; color: #263348; background: #fff; border-radius: 16px; }
+// .popup.open ~ .wrapper { position: fixed; width: 100%; }
+// .popup_close { position: absolute; top: 40px; right: 40px; display: block; width: 30px; height: 30px; background: url(../images/close_01.png) center no-repeat; background-size: auto 20px; }
+// .popup_area .popup_title { margin-bottom: 40px; padding: 0 30px 5px 0; font-size: 24px; font-weight: 500; border-bottom: solid 1px #ddd; }
+// .popup_area > h4 { margin-bottom: 20px; font-size: 21px; font-weight: 500; }

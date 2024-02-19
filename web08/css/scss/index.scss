@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// reset
+@import "base/_reset.scss";
+
+// JS_小網menu
+@import "base/_pagemenu.scss";
+
+// 天地
+@import "base/_frame.scss";
+
+// 共用css
+@import "base/_common.scss";
+
+// 頁面css
+@import "page/_index.scss";

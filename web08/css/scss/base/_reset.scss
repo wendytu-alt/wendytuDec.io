@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/*----------------------------------------------------*/
+/*font*/
+// NOTO SANS 400 700、ROBOTO、jf金萱那提
+/*----------------------------------------------------*/
+/* Roboto */
+/* Roboto-Regular-400 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/Roboto-Regular-400.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular-400.woff') format('woff');
+  font-display: swap;
+}
+/* Roboto-Bold-700 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../fonts/Roboto-Bold-700.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold-700.woff') format('woff');
+  font-display: swap;
+}
+
+/*font_Noto Sans TC*/
+/* noto-sans-tc-regular - latin_chinese-traditional */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/noto-sans-tc-v11-latin_chinese-traditional-regular.woff2') format('woff2'),
+    url('../fonts/noto-sans-tc-v11-latin_chinese-traditional-regular.woff') format('woff');
+  font-display: swap;
+}
+/* noto-sans-tc-500 - latin_chinese-traditional */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../fonts/noto-sans-tc-v11-latin_chinese-traditional-500.woff2') format('woff2'),
+    url('../fonts/noto-sans-tc-v11-latin_chinese-traditional-500.woff') format('woff');
+  font-display: swap;
+}
+/* noto-sans-tc-700 - latin_chinese-traditional */
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../fonts/noto-sans-tc-v11-latin_chinese-traditional-700.woff2') format('woff2'),
+    url('../fonts/noto-sans-tc-v11-latin_chinese-traditional-700.woff') format('woff');
+  font-display: swap;
+}
+/* jinxuanlatte */
+/* jinxuanlatte-900 */
+@font-face {
+  font-family: 'openhuninn';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../fonts/jf-openhuninn-1.1.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* jinxuanlatte */
+/* jinxuanlatte-900 */
+@font-face {
+  font-family: 'jinxuanlatte';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+    url('../fonts/jf-jinxuanlatte-2.0-heavy.otf') format('opentype');
+  font-display: swap;
+}
+
+.font-en {
+  font-family: 'Roboto', 'Noto Sans TC';
+}
+.font-round {
+  font-family: 'openhuninn';
+}
+.font-arc {
+  font-family: 'jinxuanlatte';
+}
+
+/*----------------------------------------------------*/
+/*reset*/
+/*----------------------------------------------------*/
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, select, textarea, label, p, blockquote, th, td, iframe, button, a, header, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
+}
+body {
+  font: 18px/167% 'Noto Sans TC', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: 400;
+}
+html {
+  /*safari內網頁的字體不會無緣無故變大*/
+  -webkit-text-size-adjust: 100%;
+  /*safari內網頁滑動起來不會卡卡的*/
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  color: inherit;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+table {
+  width: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input, button, textarea, select, optgroup, option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: none;
+}
+img {
+  /*防止chrome將圖片縮放時平滑化處理*/
+  image-rendering: -webkit-optimize-contrast;
+}
+/*reset end*/
+

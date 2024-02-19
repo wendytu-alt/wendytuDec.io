@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*----------------------------------------------------*/
+/* common use */
+/* 基礎變數定義 */
+/*----------------------------------------------------*/
+/* 定義 */
+//RWD尺寸標準
+$size-max: 1440px;
+$size-large: 1380px;
+$size-mid: 1023px;
+$size-mobile: 767px;
+//函式
+@mixin screen-width($screensize) {
+  @media all and (max-width: $screensize) {
+    @content;
+  }
+}
